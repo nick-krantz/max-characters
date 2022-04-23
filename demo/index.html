@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    @media (prefers-color-scheme: light) {
+      body {
+        background: #fafafa;
+        color: #000;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #000;
+        color: white;
+      }
+    }
+
+    div {
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../dist/src/max-characters.js';
+
+    render(
+      html`
+        <max-characters max="20">
+        </max-characters>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
