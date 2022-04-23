@@ -1,10 +1,14 @@
 # \<max-characters>
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+`max-characters` is a web component that will highlight characters that exceed the maximum number of characters. Inspiration taken from exceeding tweet limit from the web.
+
+The project was bootstrapped from the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
 ## Installation
 
 ```bash
+yarn add max-characters
+# OR 
 npm i max-characters
 ```
 
@@ -18,44 +22,46 @@ npm i max-characters
 <max-characters></max-characters>
 ```
 
-## Linting and formatting
+## Development
+
+### Local Demo with `web-dev-server`
+
+```bash
+yarn start
+```
+
+To run a local development server that serves the basic demo located in `demo/index.html`
+
+### Linting and formatting
 
 To scan the project for linting and formatting errors, run
 
 ```bash
-npm run lint
+yarn lint
 ```
 
 To automatically fix linting and formatting errors, run
 
 ```bash
-npm run format
+yarn format
 ```
 
-## Testing with Web Test Runner
+### Testing with Web Test Runner
 
 To execute a single test run:
 
 ```bash
-npm run test
+yarn test
 ```
 
 To run the tests in interactive watch mode run:
 
 ```bash
-npm run test:watch
+yarn test:watch
 ```
 
-## Tooling configs
+### Tooling configs
 
 For most of the tools, the configuration is in the `package.json` to reduce the amount of files in your project.
 
 If you customize the configuration a lot, you can consider moving them to individual files.
-
-## Local Demo with `web-dev-server`
-
-```bash
-npm start
-```
-
-To run a local development server that serves the basic demo located in `demo/index.html`

@@ -26,6 +26,7 @@ export class MaxCharacters extends LitElement {
       margin: 0.5rem;
     }
 
+    /** position overlay to be directly behind .text-box */
     .overlay {
       --position: calc(var(--text-box-padding) + var(--border-width));
       position: absolute;
@@ -35,6 +36,7 @@ export class MaxCharacters extends LitElement {
       top: var(--position);
       z-index: -1;
       word-break: break-word;
+      color: transparent; // transparent text to never have an overlap effect
     }
 
     @media (prefers-color-scheme: light) {
