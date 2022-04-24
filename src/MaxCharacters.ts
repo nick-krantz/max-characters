@@ -5,9 +5,9 @@ export class MaxCharacters extends LitElement {
   static styles = css`
     :host {
       display: block;
-      --light-bg-color: #fafafa;
+      --light-color: #fafafa;
       --light-highlight-color: #f56565;
-      --dark-bg-color: #0d0d0d;
+      --dark-color: #0d0d0d;
       --dark-highlight-color: #8a0d20;
       --text-box-padding: 0.75rem;
       --border-width: 1px;
@@ -41,8 +41,7 @@ export class MaxCharacters extends LitElement {
 
     @media (prefers-color-scheme: light) {
       .text-box {
-        border: var(--border-width) solid var(--dark-bg-color);
-        color: --dark-bg-color;
+        border: var(--border-width) solid var(--dark-color);
       }
 
       .red {
@@ -52,8 +51,7 @@ export class MaxCharacters extends LitElement {
 
     @media (prefers-color-scheme: dark) {
       .text-box {
-        border: var(--border-width) solid var(--light-bg-color);
-        color: white;
+        border: var(--border-width) solid var(--light-color);
       }
 
       .red {

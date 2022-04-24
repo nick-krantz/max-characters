@@ -1,0 +1,4 @@
+dist\tsconfig.tsbuildinfo
+dist\test
+coverage/
+.vscode/
